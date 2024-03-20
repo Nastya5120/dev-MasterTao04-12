@@ -1,8 +1,52 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
+.header{
+	position: relative;
+	padding: 25px 0 39px;
+	
+	&-logo{
+		max-width: 168px;
+	}
+
+     > .container {
+		display: flex;
+	}
+
+	&-nav {
+		display: flex;
+		width: 100%;
+	}
+
+    &-nav-list {
+		display: flex;
+		gap: 25px;
+		list-style: none;
+		font-weight: 400;
+		line-height: 150%;
+		padding-left: 88px;
+	}
+
+	&-list-link {
+		padding: 10px 10px 10px;
+		padding: 13px 12px 10px;
+		text-decoration: none;
 		color: #fff;
 	}
+	
+	&-list-link:hover {
+		color: $primary-color;
+	}
+    .btn {
+        margin-left: auto;
+    }
+    
+    &-list-item {
+        display: flex;
+    }
+	.btn {
+		width: 191px;
+		padding: 13px 22px;
+	}
+	.hamburger{
+		margin-left: auto;
+	}
+    
 }

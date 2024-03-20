@@ -1,0 +1,102 @@
+h1{
+    font-size: 39px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 22px;
+}
+h6{
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 700;
+    line-height: 126%;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+body{
+    font-size: 16px;
+    color: $text-color;
+    background-color: $bg-color;
+    font-family: $font-primary;
+}
+.container {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btn{
+    width: 171px;
+    height: 50px;
+    border-radius: 90px;
+    background-color: $primary-color;
+    color: #FFFFFF;
+    padding: 13px 17px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 146%;
+    display: inline-block;
+}
+ol {
+    counter-reset: li;
+
+    li {
+        list-style: none;
+
+        &:not([class]):before {
+            content: counter(li, decimal) ".";
+            counter-increment: li;
+            color: $secondary-color;
+            margin-right: 12px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}
+ul {
+    li {
+        list-style: none;
+
+        &:not([class]):before {
+            content: "";
+            background-color: $secondary-color;
+            margin-right: 12px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    }
+}
